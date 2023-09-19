@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import FileUpload from './FileUpload'
-import TextAnalysis from './TextAnalysis'
+import FileUpload from './components/FileUpload'
+import TextAnalysis from './components/TextAnalysis'
 import './App.css'
 
 function App() {
