@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
+import './App.css';
 
 const FileUpload = ({ onFileUpload }) => {
   const [file, setFile] = useState(null);
@@ -18,10 +19,10 @@ const FileUpload = ({ onFileUpload }) => {
   };
 
   return (
-    <>
+    <div className="form">
       <input type="file" onChange={handleFileChange} />
       <button onClick={handleUpload}>Upload</button>
-    </>
+    </div>
   );
 }
 

@@ -18,11 +18,11 @@ function App() {
   };
 
   return (
-    <>
+    <div className="App">
       <h1>Text Analyzer</h1>
       <FileUpload onFileUpload={handleFileUpload} />
       {analysisResults && <TextAnalysis analysisResults={analysisResults} />}
-    </>
+    </div>
   )
 }
 
