@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 
-function FileUpload({ onFileUpload }) {
+const FileUpload = ({ onFileUpload }) => {
   const [file, setFile] = useState(null);
 
   const handleFileChange = (e) => {
@@ -18,10 +18,10 @@ function FileUpload({ onFileUpload }) {
   };
 
   return (
-    <div>
+    <>
       <input type="file" onChange={handleFileChange} />
       <button onClick={handleUpload}>Upload</button>
-    </div>
+    </>
   );
 }
 
